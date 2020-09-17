@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swiftymocky",
+    name: "SwiftyMocky",
     products: [
         .library(name: "SwiftyMocky", targets: ["SwiftyMocky"]),
         .library(name: "SwiftyPrototype", targets: ["SwiftyPrototype"]),
@@ -21,14 +21,6 @@ let package = Package(
         ),
         .target(
             name: "Shared"
-        ),
-        .target(
-            name: "Mocky_Example_macOS",
-            path: "./SwiftyMocky-Example/Shared"
-        ),
-        .testTarget(
-            name: "SwiftyMockyTests",
-            dependencies: ["Mocky_Example_macOS", "SwiftyMocky"]
         ),
     ]
 )
