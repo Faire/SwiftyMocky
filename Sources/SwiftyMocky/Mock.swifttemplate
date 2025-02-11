@@ -565,7 +565,7 @@ class MethodWrapper {
     }
     var hasAvailability: Bool { method.attributes["available"]?.isEmpty == false }
     var isAsync: Bool {
-        self.method.annotations["async"] != nil
+        self.method.isAsync
     }
 
     private var registrationName: String {
